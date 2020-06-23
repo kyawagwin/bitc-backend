@@ -6,6 +6,8 @@ const resolvers = require("./resolvers");
 const LaunchAPI = require("./datasources/launch");
 const UserAPI = require("./datasources/user");
 
+const isEmail = require("isemail");
+
 const store = createStore();
 
 const server = new ApolloServer({
